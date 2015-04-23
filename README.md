@@ -1,5 +1,7 @@
 # Life Is Leet
 
+[![Build Status](http://img.shields.io/travis/lifeisleet/lifeisleet.svg?style=flat)](https://travis-ci.org/lifeisleet/lifeisleet)
+
 CMS for podcasters.
 
 ## Development
