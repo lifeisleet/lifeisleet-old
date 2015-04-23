@@ -1,6 +1,7 @@
 # Life Is Leet
 
 [![Build Status](http://img.shields.io/travis/lifeisleet/lifeisleet.svg?style=flat)](https://travis-ci.org/lifeisleet/lifeisleet)
+[![Dependency Status](http://img.shields.io/gemnasium/lifeisleet/lifeisleet.svg?style=flat)](https://gemnasium.com/lifeisleet/lifeisleet)
 
 CMS for podcasters.
 
