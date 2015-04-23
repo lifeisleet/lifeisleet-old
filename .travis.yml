@@ -8,4 +8,6 @@ before_script:
   - bundle exec rake db:setup
 
 addons:
+  code_climate:
+    repo_token: 0281681fc11cae8b3d1f56b5ed64466e7930e3dd9cc37ac4b603ac6434073d43
   postgresql: "9.4"
