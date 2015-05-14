@@ -4,6 +4,7 @@
 [![Dependency Status](http://img.shields.io/gemnasium/lifeisleet/lifeisleet.svg?style=flat)](https://gemnasium.com/lifeisleet/lifeisleet)
 [![Code Climate](https://codeclimate.com/github/lifeisleet/lifeisleet/badges/gpa.svg)](https://codeclimate.com/github/lifeisleet/lifeisleet)
 [![Test Coverage](https://codeclimate.com/github/lifeisleet/lifeisleet/badges/coverage.svg)](https://codeclimate.com/github/lifeisleet/lifeisleet)
+[![Huboard](https://img.shields.io/github/issues/lifeisleet/lifeisleet.svg?style=flat)](https://huboard.com/lifeisleet/lifeisleet/)
 
 CMS for podcasters.
 
@@ -11,7 +12,7 @@ CMS for podcasters.
 
 ### Requirements
 
-  * Ruby 2.2.1
+  * Ruby 2.2.2
   * PostgreSQL 9.4
 
 ### Setup
