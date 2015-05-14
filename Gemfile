@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim-rails', '~> 3.0.1'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 
+gem 'devise', '~> 3.4.1'
 gem 'rails_admin', '~> 0.6.7'
 
 group :development, :test do
