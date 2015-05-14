@@ -1,4 +1,5 @@
 RailsAdmin.config do |config|
+  config.main_app_name = ["Life Is Leet", "Admin"]
 
   ### Popular gems integration
 
