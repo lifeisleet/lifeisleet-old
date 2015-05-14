@@ -1,20 +1,17 @@
-h2 Log in
+.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-4
+  = bootstrap_form_for(resource, url: session_path(resource_name)) do |f|
+    fieldset
+      legend
+       h2 Log In
 
-= form_for(resource, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    = f.email_field :email, autofocus: true
+      = f.email_field :email, autofocus: true
 
-  .field
-    = f.label :password
-    = f.password_field :password, autocomplete: "off"
+      = f.password_field :password, autocomplete: "off"
 
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
+      - if devise_mapping.rememberable?
+        = f.check_box :remember_me
 
-  .actions
-    = f.submit "Log in"
+      .actions
+        = f.submit "Log in"
 
-= render "devise/shared/links"
+    = render "devise/shared/links"
