@@ -43,6 +43,7 @@ gem 'paper_trail', '~> 4.0.0.rc1'
 
 gem 'paperclip', '~> 4.2'
 gem 'fog-aws', '~> 0.2'
+gem 'delayed_paperclip', '~> 2.9'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.2.1'
