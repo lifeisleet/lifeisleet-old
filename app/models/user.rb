@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
 
   rails_admin do
+    configure :set_password
+
     list do
       field :name
       field :email
@@ -25,10 +27,19 @@ class User < ActiveRecord::Base
     edit do
       field :name
       field :email
+      field :set_password
     end
   end
 
   def to_s
     name
+  end
+
+  def set_password; nil; end
+
+  def set_password=(value)
+    return nil if value.blank?
+    self.password = value
+    self.password_confirmation = value
   end
 end
