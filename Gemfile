@@ -41,6 +41,8 @@ gem 'cancancan', '~> 1.10.1'
 gem 'rails_admin', '~> 0.6.7'
 gem 'paper_trail', '~> 3.0.8'
 
+gem 'paperclip', '~> 4.2'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.2.1'
   gem 'capybara'
