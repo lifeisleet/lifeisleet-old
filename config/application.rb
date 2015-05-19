@@ -31,5 +31,16 @@ module Lifeisleet
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Paperclip + Fog
+    config.paperclip_defaults = {
+      storage: :fog,
+      fog_credentials: {
+        provider: "Local",
+        local_root: File.join(Rails.root, "public")
+      },
+      fog_directory: "",
+      fog_host: "http://localhost:3000"
+    }
   end
 end
