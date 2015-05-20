@@ -4,7 +4,7 @@
 [![Dependency Status](http://img.shields.io/gemnasium/lifeisleet/lifeisleet.svg?style=flat)](https://gemnasium.com/lifeisleet/lifeisleet)
 [![Code Climate](https://codeclimate.com/github/lifeisleet/lifeisleet/badges/gpa.svg)](https://codeclimate.com/github/lifeisleet/lifeisleet)
 [![Test Coverage](https://codeclimate.com/github/lifeisleet/lifeisleet/badges/coverage.svg)](https://codeclimate.com/github/lifeisleet/lifeisleet)
-[![Huboard](https://img.shields.io/github/issues/lifeisleet/lifeisleet.svg?style=flat)](https://huboard.com/lifeisleet/lifeisleet/)
+[![Issues](https://img.shields.io/github/issues/lifeisleet/lifeisleet.svg?style=flat)](https://github.com/lifeisleet/lifeisleet/issues)
 
 CMS for podcasters.
 
