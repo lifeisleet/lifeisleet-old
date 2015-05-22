@@ -42,7 +42,7 @@ gem 'rails_admin', '~> 0.6.7'
 gem 'paper_trail', '~> 4.0.0.rc1'
 
 gem 'paperclip', '~> 4.2'
-gem 'fog-aws', '~> 0.2'
+gem 'fog-aws', '~> 0.3'
 gem 'delayed_paperclip', '~> 2.9'
 
 group :development, :test do
