@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150521035040) do
+ActiveRecord::Schema.define(version: 20150522034521) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,18 @@ ActiveRecord::Schema.define(version: 20150521035040) do
 
   add_index "shows", ["domain"], name: "index_shows_on_domain", unique: true, using: :btree
   add_index "shows", ["title"], name: "index_shows_on_title", unique: true, using: :btree
+
+  create_table "user_show_associations", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "show_id"
+    t.boolean  "is_owner",   default: false, null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "user_show_associations", ["show_id"], name: "index_user_show_associations_on_show_id", using: :btree
+  add_index "user_show_associations", ["user_id", "show_id"], name: "index_user_show_associations_on_user_id_and_show_id", unique: true, using: :btree
+  add_index "user_show_associations", ["user_id"], name: "index_user_show_associations_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",               default: "", null: false
@@ -80,4 +92,6 @@ ActiveRecord::Schema.define(version: 20150521035040) do
   add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id", using: :btree
   add_index "versions", ["transaction_id"], name: "index_versions_on_transaction_id", using: :btree
 
+  add_foreign_key "user_show_associations", "shows"
+  add_foreign_key "user_show_associations", "users"
 end
