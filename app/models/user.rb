@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :rememberable, :trackable, :validatable,
     :lockable
 
-  has_many :user_show_associations, dependent: :destroy
+  has_many :user_show_associations, inverse_of: :user, dependent: :destroy
   has_many :shows, through: :user_show_associations
 
   validates :name, presence: true, uniqueness: true
