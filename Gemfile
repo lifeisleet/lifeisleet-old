@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.3'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -33,12 +33,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'haml', '~> 4.0.6'
-gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'bootstrap-sass', '~> 3.3'
 gem 'bootstrap_form', '~> 2.3.0'
 
 gem 'devise', '~> 3.5.1'
-gem 'cancancan', '~> 1.10.1'
-gem 'rails_admin', '~> 0.6.7'
+gem 'cancancan', '~> 1.12'
+gem 'rails_admin', '~> 0.6'
 gem 'paper_trail', '~> 4.0.0.rc1'
 
 gem 'paperclip', '~> 4.2'
@@ -46,7 +46,7 @@ gem 'fog-aws', '~> 0.4'
 gem 'delayed_paperclip', '~> 2.9'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.2.1'
+  gem 'rspec-rails', '~> 3.2'
   gem 'capybara'
   gem 'factory_girl_rails'
 
