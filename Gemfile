@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -32,17 +32,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'haml', '~> 4.0.6'
+gem 'haml', '~> 4.0.7'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'bootstrap_form', '~> 2.3.0'
 
-gem 'devise', '~> 3.5.1'
+gem 'devise', '~> 3.5.2'
 gem 'cancancan', '~> 1.12'
 gem 'rails_admin', '~> 0.6'
-gem 'paper_trail', '~> 4.0.0.rc1'
+gem 'paper_trail', '~> 4.0.0'
 
-gem 'paperclip', '~> 4.2'
-gem 'fog-aws', '~> 0.4'
+gem 'paperclip', '~> 4.3'
+gem 'fog-aws', '~> 0.7'
 gem 'delayed_paperclip', '~> 2.9'
 
 group :development, :test do
