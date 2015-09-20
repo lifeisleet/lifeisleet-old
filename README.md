@@ -10,20 +10,32 @@ CMS for podcasters.
 
 ## Development
 
-### Requirements
+  * [Docker Toolbox](https://www.docker.com/toolbox)
+  * A running Docker machine:
 
-  * Ruby 2.2.2
-  * PostgreSQL 9.4
+    ```bash
+    $ docker-machine create --driver=virtualbox default
+    $ docker-machine start default
+    $ eval "$(docker-machine env default)"
+    $ docker-machine ip default
+    ```
 
 ### Setup
 
-    $ git clone https://github.com/lifeisleet/lifeisleet.git && cd $_
-    $ bin/setup
-    $ bin/rails s
+```bash
+$ git clone https://github.com/lifeisleet/lifeisleet.git && cd $_
+$ docker-compose build
+$ docker-compose up -d
+$ docker-compose run --rm web bin/rake db:setup
+$ docker-compose up
+```
 
 ### Testing
 
-    $ bin/rspec
+```bash
+$ docker-compose run --rm -e RAILS_ENV=test web bin/rake db:setup
+$ docker-compose run --rm web bin/rspec
+```
 
 ## Copyright
 
