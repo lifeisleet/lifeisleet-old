@@ -42,5 +42,8 @@ module Lifeisleet
       fog_directory: "",
       fog_host: "http://localhost:3000"
     }
+
+    # Allow web console access from Docker Machine host
+    config.web_console.whitelisted_ips = %w( 192.168.0.0/16 )
   end
 end
