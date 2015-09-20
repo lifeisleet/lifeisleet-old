@@ -1,0 +1,12 @@
+db:
+  image: postgres:9.4
+
+web:
+  build: .
+  links:
+    - db
+  ports:
+    - "3000:3000"
+  volumes:
+    - /ruby_gems
+    - .:/usr/src/app
