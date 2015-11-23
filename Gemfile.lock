@@ -37,7 +37,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
-    autoprefixer-rails (6.1.0.1)
+    autoprefixer-rails (6.1.1)
       execjs
       json
     bcrypt (3.1.10)
@@ -131,7 +131,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (2.6.2)
+    mime-types (2.99)
     mimemagic (0.3.0)
     mini_portile (0.6.2)
     minitest (5.8.3)
@@ -176,7 +176,7 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
-    rails_admin (0.7.0)
+    rails_admin (0.8.0)
       builder (~> 3.1)
       coffee-rails (~> 4.0)
       font-awesome-rails (>= 3.0, < 5)
