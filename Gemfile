@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '~> 4.2.5.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -36,7 +36,7 @@ gem 'haml', '~> 4.0.7'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'bootstrap_form', '~> 2.3.0'
 
-gem 'devise', '~> 3.5.2'
+gem 'devise', '>= 3.5.4'
 gem 'cancancan', '~> 1.12'
 gem 'rails_admin', '~> 0.6'
 gem 'paper_trail', '~> 4.0.0'
@@ -61,3 +61,6 @@ end
 gem 'web-console', group: :development
 
 gem "codeclimate-test-reporter", group: :test, require: nil
+
+gem 'nokogiri', '>= 1.6.7.2'
+gem 'rails-html-sanitizer', '~> 1.0.3'
