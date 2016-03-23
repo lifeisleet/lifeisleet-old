@@ -1,20 +1,22 @@
-FROM ruby:2.3.0
+FROM ruby:2.3.0-alpine
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends nodejs && \
-    rm -rf /var/lib/apt/lists/*
+RUN apk add --update --no-cache \
+      build-base \
+      nodejs \
+      tzdata \
+      libxml2-dev \
+      libxslt-dev \
+      postgresql-dev
+RUN bundle config build.nokogiri --use-system-libraries
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+ENV APP_HOME /usr/src/app
+RUN mkdir -p $APP_HOME
+WORKDIR $APP_HOME
 
 EXPOSE 3000
 
 ENV BUNDLE_PATH /ruby_gems
+ADD . $APP_HOME
 
-ADD Gemfile Gemfile
-ADD Gemfile.lock Gemfile.lock
-RUN bundle install
+CMD ["bin/rails", "s", "-b", "0.0.0.0"]
 
-ADD . /usr/src/app
-
-CMD bin/rails s -b 0.0.0.0

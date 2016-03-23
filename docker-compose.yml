@@ -8,5 +8,11 @@ web:
   ports:
     - "3000:3000"
   volumes:
-    - /ruby_gems
     - .:/usr/src/app
+  volumes_from:
+    - gems
+
+gems:
+  image: busybox
+  volumes:
+    - /ruby_gems
