@@ -10,25 +10,26 @@ CMS for podcasters.
 
 ## Development
 
-  * [Docker Toolbox](https://www.docker.com/toolbox)
-  * A running Docker machine:
+### Requirements
 
-    ```bash
-    $ docker-machine create --driver=virtualbox default
-    $ docker-machine start default
-    $ eval "$(docker-machine env default)"
-    $ docker-machine ip default
-    ```
+ * [Docker](https://www.docker.com/)
+ * [Docker Compose](https://docs.docker.com/compose/)
+
+On OS X:
+
+ * [DLite](https://github.com/nlf/dlite)
+ * Installing Docker and Docker Compose through [Homebrew](http://brew.sh/) is
+   recommended.
 
 ### Setup
 
 ```bash
 $ git clone https://github.com/lifeisleet/lifeisleet.git && cd $_
-$ docker-compose build
-$ docker-compose up -d
-$ docker-compose run --rm web bin/rake db:setup
+$ bin/setup
 $ docker-compose up
 ```
+
+The web server will be listening on port 3000 of your Docker host.
 
 ### Testing
 
