@@ -16,7 +16,6 @@ WORKDIR $APP_HOME
 EXPOSE 3000
 
 ENV BUNDLE_PATH /ruby_gems
-ADD . $APP_HOME
 
 CMD ["bin/rails", "s", "-b", "0.0.0.0"]
 
